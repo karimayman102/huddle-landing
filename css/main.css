@@ -130,7 +130,7 @@ main{
     width:100%;
     color:rgba(0,0,0,0.6)
 }
-@media(max-width:767px){
+@media(max-width:850px){
     .static-content{
         flex-direction:column;
     }
@@ -189,6 +189,12 @@ article p{
 }
 @media(max-width:991px){
     .info article{
+        padding:80px 10%;
+    }
+    .infi .right {
+        padding-bottom:20px;
+    }
+    .info article{
         grid-template-areas:
             "right"
             "left";
@@ -196,6 +202,9 @@ article p{
     }
     .info article .left{
         grid-area:left;
+    }
+    article h2, article p{
+        text-align:center;
     }
     .info article .right{
         grid-area:right;
@@ -309,6 +318,9 @@ form button{
     font-size:40px;
 }
 @media(max-width:991px){
+    .main-container p {
+        width: 100%;
+    }
     .footer-content{
         grid-template-areas:
         "right "
@@ -336,9 +348,7 @@ form button{
     }
 }
 @media(max-width:600px){
-    article h2, article p{
-        text-align:center;
-    }
+
     article h2{
         font-size:22px;
     }
@@ -350,9 +360,6 @@ form button{
     }
     .num span {
         font-size: 70px;
-    }
-    .main-container p {
-        width: 100%;
     }
     .btn{
         padding:15px 35px;
